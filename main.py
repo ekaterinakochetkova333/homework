@@ -1,16 +1,11 @@
-# This is a sample Python script.
+from src.widget import mask_account_card
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+list_account = []
+list_account.append("Visa Platinum 7000792289606361")
+list_account.append("Maestro 7000792289606361")
+list_account.append("Счет 73654108430135874305")
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+for acc in list_account:
+    res = mask_account_card(acc)
+    print(res)
