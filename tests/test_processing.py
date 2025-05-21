@@ -29,5 +29,5 @@ def test_filter_by_state(data_for_processing, state, expected_result):
         {'id': 41428829, 'state': 'EXECUTED', 'date': '2019-07-03T18:35:29.512364'},
     ])
 ])
-def test_sort_by_date(data_for_processing,is_reverse, expected_result):
+def test_sort_by_date(data_for_processing, is_reverse, expected_result):
     assert sort_by_date(data_for_processing, is_reverse) == expected_result
