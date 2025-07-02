@@ -5,7 +5,7 @@ def filter_by_currency(transactions, currency):
 
 
 def transaction_descriptions(transactions):
-    """Функция-генератор, принимает на вход список словарей"""
+    """Функция-генератор, принимает на вход список словарей,использует yield для генерации значений по запросу."""
     for descriptions in transactions:
         yield descriptions["description"]
 
