@@ -23,7 +23,14 @@ def log(filename=None):
 
 
 @log(filename="mylog.txt")
-def my_function(x, y):
+def my_function_yes_file(x, y):
     return x + y
 
-my_function(1, 2)
+
+@log()
+def my_function_no_file(x, y):
+    return x + y
+
+
+# my_function(6, 2)
+# my_function(2,0)
