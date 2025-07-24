@@ -1,5 +1,5 @@
 def log(filename=None):
-    def my_decorator(func):     #my_function
+    def my_decorator(func):
         def wrapper(*args, **kwargs):
             result = None
             file = None
