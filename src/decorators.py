@@ -31,7 +31,3 @@ def my_function_yes_file(x, y):
 @log()
 def my_function_no_file(x, y):
     return x + y
-
-
-# my_function(6, 2)
-# my_function(2,0)

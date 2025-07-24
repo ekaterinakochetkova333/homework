@@ -2,6 +2,7 @@ from src.decorators import my_function_no_file, my_function_yes_file
 
 
 def test_log(capsys):
+    """Тест проверяющий правильность работы декоратора"""
     my_function_no_file(5, 10)
     captured = capsys.readouterr()
     assert captured.out == "my_function_no_file ok\n"
