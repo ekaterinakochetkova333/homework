@@ -15,7 +15,7 @@ def get_transaction_amount_rub(transaction) -> float:
     elif currency_code == "USD" or currency_code == "EUR":
         url = f"https://api.apilayer.com/exchangerates_data/convert?to=RUB&from={currency_code}&amount={amount}"
         payload = {}
-        headers = {"apikey": os.getenv('API_KEY')}    #"24z0Oh9LjLrDGi9p8XyNuCwZ3k6HvEz4"
+        headers = {"apikey": os.getenv('API_KEY')}
         response = requests.request("GET", url, headers=headers, data=payload)
         status_code = response.status_code
         result = response.json()
