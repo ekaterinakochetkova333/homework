@@ -1,6 +1,7 @@
 import csv
 import pandas
 
+
 def transactions_read_csv(path):
     """Функция для считывания финансовых операций из CSV"""
     with open(path, encoding='utf-8') as file:

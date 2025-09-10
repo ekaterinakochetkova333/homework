@@ -9,6 +9,7 @@ def test_transactions_read_csv(mock_DictReader):
     res = transactions_read_csv('data/transactions.csv')
     assert res == []
 
+
 @patch("pandas.read_excel")
 def test_transactions_read_excel(mock_read_excel):
     """Тест функции для считывания финансовых операций из Excel"""
