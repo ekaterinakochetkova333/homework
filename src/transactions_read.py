@@ -5,7 +5,7 @@ import pandas
 def transactions_read_csv(path):
     """Функция для считывания финансовых операций из CSV"""
     with open(path, encoding='utf-8') as file:
-        reader = csv.DictReader(file)
+        reader = csv.DictReader(file, delimiter=';')
         return list(reader)
 
 

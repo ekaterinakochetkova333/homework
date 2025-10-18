@@ -6,7 +6,7 @@ def filter_by_state(in_states: list[dict[str, Any]], state_id: str = "EXECUTED")
 
     list_state = []
     for key in in_states:
-        if key.get("state") == state_id:
+        if key.get("state") is not None and key.get("state").lower() == state_id.lower():
             list_state.append(key)
     return list_state
 
